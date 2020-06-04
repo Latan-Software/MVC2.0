@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9d2412d47268486787ced370b9d1ae4c" Name="Diagram1">
+        <EntityTypeShape EntityType="MyBDatosModel.ASISTENCIACARRETERA" Width="1.5" PointX="3" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.BASTIDORESTECHO" Width="1.5" PointX="6" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.CUBIERTAS" Width="1.5" PointX="3" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.REMOLQUE" Width="1.5" PointX="3" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.ALFOMBRAS" Width="1.5" PointX="6" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.ENTRETENIMIENTO" Width="1.5" PointX="6" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.PEDALES" Width="1.5" PointX="9" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.PERILLASCAMBIO" Width="1.5" PointX="9" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.Marca" Width="1.5" PointX="3.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.Modelo" Width="1.5" PointX="3.75" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.Proveedor" Width="1.5" PointX="0.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.BUJIAS" Width="1.5" PointX="9" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.FAJASYMANGUERAS" Width="1.5" PointX="12" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.FILTROACEITE" Width="1.5" PointX="12" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.FILTROCOMBUSTIBLE" Width="1.5" PointX="12" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.FILTRODEAIRE" Width="1.5" PointX="3" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.TERMOSTATO" Width="1.5" PointX="3" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.ALTERNADORES" Width="1.5" PointX="6" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.DIRECCION" Width="1.5" PointX="6" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.ENCENDIDO" Width="1.5" PointX="9" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.FRENOS" Width="1.5" PointX="9" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.LUCES" Width="1.5" PointX="12" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.RADIADORES" Width="1.5" PointX="12" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyBDatosModel.SUSPENCION" Width="1.5" PointX="15" PointY="48" IsExpanded="true" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK4" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK4" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK4" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK41" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK41" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK41" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK31" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK31" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK31" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK21" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK21" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK21" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK11" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK11" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK11" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK12" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK13" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK22" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK23" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK32" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK33" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK42" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK43" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK5" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK51" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK6" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.marca_FK61" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK12" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK13" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK22" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK23" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK32" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK33" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK42" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK43" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK5" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK51" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK6" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.modelo_FK61" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK12" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK13" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK22" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK23" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK32" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK33" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK42" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK43" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK5" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK51" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK6" ManuallyRouted="false" />
+        <AssociationConnector Association="MyBDatosModel.Proveedor_FK61" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

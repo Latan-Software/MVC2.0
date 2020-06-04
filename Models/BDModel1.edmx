@@ -1,0 +1,3283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MyBDatosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ASISTENCIACARRETERA">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="BASTIDORESTECHO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="CUBIERTAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="REMOLQUE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="ALFOMBRAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="ENTRETENIMIENTO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="PEDALES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="PERILLASCAMBIO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Marca">
+          <Key>
+            <PropertyRef Name="id_marca" />
+          </Key>
+          <Property Name="id_marca" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MARCA" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Modelo">
+          <Key>
+            <PropertyRef Name="id_modelo" />
+          </Key>
+          <Property Name="id_modelo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MODELO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Proveedor">
+          <Key>
+            <PropertyRef Name="id_proveedor" />
+          </Key>
+          <Property Name="id_proveedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TELEFONO" Type="varchar" MaxLength="50" />
+          <Property Name="DIRECCION" Type="varchar" MaxLength="50" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="35" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="BUJIAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="FAJASYMANGUERAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="FILTROACEITE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="FILTROCOMBUSTIBLE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="FILTRODEAIRE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="TERMOSTATO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="ALTERNADORES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="DIRECCION">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="ENCENDIDO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="FRENOS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="LUCES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="RADIADORES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="SUSPENCION">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SKU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRECIO" Type="money" />
+          <Property Name="MARCA" Type="int" Nullable="false" />
+          <Property Name="MODELO" Type="int" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="150" />
+          <Property Name="EXISTENCIA" Type="int" />
+          <Property Name="PROVEEDOR" Type="int" Nullable="false" />
+          <Property Name="CODIGO" Type="varchar" MaxLength="34" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="marca_FK">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="SUSPENCION" Type="Self.SUSPENCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="SUSPENCION">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK1">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="REMOLQUE" Type="Self.REMOLQUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="REMOLQUE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK11">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="PERILLASCAMBIO" Type="Self.PERILLASCAMBIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="PERILLASCAMBIO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK12">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="TERMOSTATO" Type="Self.TERMOSTATO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="TERMOSTATO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK13">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ALTERNADORES" Type="Self.ALTERNADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ALTERNADORES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK2">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="CUBIERTAS" Type="Self.CUBIERTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="CUBIERTAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK21">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="PEDALES" Type="Self.PEDALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="PEDALES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK22">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FILTRODEAIRE" Type="Self.FILTRODEAIRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FILTRODEAIRE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK23">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="DIRECCION" Type="Self.DIRECCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="DIRECCION">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK3">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="BASTIDORESTECHO" Type="Self.BASTIDORESTECHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="BASTIDORESTECHO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK31">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ENTRETENIMIENTO" Type="Self.ENTRETENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ENTRETENIMIENTO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK32">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FILTROCOMBUSTIBLE" Type="Self.FILTROCOMBUSTIBLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FILTROCOMBUSTIBLE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK33">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ENCENDIDO" Type="Self.ENCENDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ENCENDIDO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK4">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ASISTENCIACARRETERA" Type="Self.ASISTENCIACARRETERA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ASISTENCIACARRETERA">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK41">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ALFOMBRAS" Type="Self.ALFOMBRAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ALFOMBRAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK42">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FILTROACEITE" Type="Self.FILTROACEITE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FILTROACEITE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK43">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FRENOS" Type="Self.FRENOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FRENOS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK5">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FAJASYMANGUERAS" Type="Self.FAJASYMANGUERAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FAJASYMANGUERAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK51">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="LUCES" Type="Self.LUCES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="LUCES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK6">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="BUJIAS" Type="Self.BUJIAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="BUJIAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK61">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="RADIADORES" Type="Self.RADIADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="RADIADORES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="SUSPENCION" Type="Self.SUSPENCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="SUSPENCION">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK1">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="REMOLQUE" Type="Self.REMOLQUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="REMOLQUE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK11">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="PERILLASCAMBIO" Type="Self.PERILLASCAMBIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="PERILLASCAMBIO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK12">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="TERMOSTATO" Type="Self.TERMOSTATO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="TERMOSTATO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK13">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ALTERNADORES" Type="Self.ALTERNADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ALTERNADORES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK2">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="CUBIERTAS" Type="Self.CUBIERTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="CUBIERTAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK21">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="PEDALES" Type="Self.PEDALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="PEDALES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK22">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FILTRODEAIRE" Type="Self.FILTRODEAIRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FILTRODEAIRE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK23">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="DIRECCION" Type="Self.DIRECCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="DIRECCION">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK3">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="BASTIDORESTECHO" Type="Self.BASTIDORESTECHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="BASTIDORESTECHO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK31">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ENTRETENIMIENTO" Type="Self.ENTRETENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ENTRETENIMIENTO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK32">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FILTROCOMBUSTIBLE" Type="Self.FILTROCOMBUSTIBLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FILTROCOMBUSTIBLE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK33">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ENCENDIDO" Type="Self.ENCENDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ENCENDIDO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK4">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ASISTENCIACARRETERA" Type="Self.ASISTENCIACARRETERA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ASISTENCIACARRETERA">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK41">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ALFOMBRAS" Type="Self.ALFOMBRAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ALFOMBRAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK42">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FILTROACEITE" Type="Self.FILTROACEITE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FILTROACEITE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK43">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FRENOS" Type="Self.FRENOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FRENOS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK5">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FAJASYMANGUERAS" Type="Self.FAJASYMANGUERAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FAJASYMANGUERAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK51">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="LUCES" Type="Self.LUCES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="LUCES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK6">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="BUJIAS" Type="Self.BUJIAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="BUJIAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK61">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="RADIADORES" Type="Self.RADIADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="RADIADORES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="SUSPENCION" Type="Self.SUSPENCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="SUSPENCION">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK1">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="REMOLQUE" Type="Self.REMOLQUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="REMOLQUE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK11">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="PERILLASCAMBIO" Type="Self.PERILLASCAMBIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="PERILLASCAMBIO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK12">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="TERMOSTATO" Type="Self.TERMOSTATO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="TERMOSTATO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK13">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ALTERNADORES" Type="Self.ALTERNADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ALTERNADORES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK2">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="CUBIERTAS" Type="Self.CUBIERTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="CUBIERTAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK21">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="PEDALES" Type="Self.PEDALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="PEDALES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK22">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FILTRODEAIRE" Type="Self.FILTRODEAIRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FILTRODEAIRE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK23">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="DIRECCION" Type="Self.DIRECCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="DIRECCION">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK3">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="BASTIDORESTECHO" Type="Self.BASTIDORESTECHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="BASTIDORESTECHO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK31">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ENTRETENIMIENTO" Type="Self.ENTRETENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ENTRETENIMIENTO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK32">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FILTROCOMBUSTIBLE" Type="Self.FILTROCOMBUSTIBLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FILTROCOMBUSTIBLE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK33">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ENCENDIDO" Type="Self.ENCENDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ENCENDIDO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK4">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ASISTENCIACARRETERA" Type="Self.ASISTENCIACARRETERA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ASISTENCIACARRETERA">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK41">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ALFOMBRAS" Type="Self.ALFOMBRAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ALFOMBRAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK42">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FILTROACEITE" Type="Self.FILTROACEITE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FILTROACEITE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK43">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FRENOS" Type="Self.FRENOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FRENOS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK5">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FAJASYMANGUERAS" Type="Self.FAJASYMANGUERAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FAJASYMANGUERAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK51">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="LUCES" Type="Self.LUCES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="LUCES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK6">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="BUJIAS" Type="Self.BUJIAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="BUJIAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK61">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="RADIADORES" Type="Self.RADIADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="RADIADORES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MyBDatosModelStoreContainer">
+          <EntitySet Name="ASISTENCIACARRETERA" EntityType="Self.ASISTENCIACARRETERA" Schema="ACCESORIOSEXTERIOR" store:Type="Tables" />
+          <EntitySet Name="BASTIDORESTECHO" EntityType="Self.BASTIDORESTECHO" Schema="ACCESORIOSEXTERIOR" store:Type="Tables" />
+          <EntitySet Name="CUBIERTAS" EntityType="Self.CUBIERTAS" Schema="ACCESORIOSEXTERIOR" store:Type="Tables" />
+          <EntitySet Name="REMOLQUE" EntityType="Self.REMOLQUE" Schema="ACCESORIOSEXTERIOR" store:Type="Tables" />
+          <EntitySet Name="ALFOMBRAS" EntityType="Self.ALFOMBRAS" Schema="ACCESORIOSINTERIOR" store:Type="Tables" />
+          <EntitySet Name="ENTRETENIMIENTO" EntityType="Self.ENTRETENIMIENTO" Schema="ACCESORIOSINTERIOR" store:Type="Tables" />
+          <EntitySet Name="PEDALES" EntityType="Self.PEDALES" Schema="ACCESORIOSINTERIOR" store:Type="Tables" />
+          <EntitySet Name="PERILLASCAMBIO" EntityType="Self.PERILLASCAMBIO" Schema="ACCESORIOSINTERIOR" store:Type="Tables" />
+          <EntitySet Name="Marca" EntityType="Self.Marca" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Modelo" EntityType="Self.Modelo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Proveedor" EntityType="Self.Proveedor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BUJIAS" EntityType="Self.BUJIAS" Schema="MANTENIMIENTO" store:Type="Tables" />
+          <EntitySet Name="FAJASYMANGUERAS" EntityType="Self.FAJASYMANGUERAS" Schema="MANTENIMIENTO" store:Type="Tables" />
+          <EntitySet Name="FILTROACEITE" EntityType="Self.FILTROACEITE" Schema="MANTENIMIENTO" store:Type="Tables" />
+          <EntitySet Name="FILTROCOMBUSTIBLE" EntityType="Self.FILTROCOMBUSTIBLE" Schema="MANTENIMIENTO" store:Type="Tables" />
+          <EntitySet Name="FILTRODEAIRE" EntityType="Self.FILTRODEAIRE" Schema="MANTENIMIENTO" store:Type="Tables" />
+          <EntitySet Name="TERMOSTATO" EntityType="Self.TERMOSTATO" Schema="MANTENIMIENTO" store:Type="Tables" />
+          <EntitySet Name="ALTERNADORES" EntityType="Self.ALTERNADORES" Schema="PIEZASDEREPUESTO" store:Type="Tables" />
+          <EntitySet Name="DIRECCION" EntityType="Self.DIRECCION" Schema="PIEZASDEREPUESTO" store:Type="Tables" />
+          <EntitySet Name="ENCENDIDO" EntityType="Self.ENCENDIDO" Schema="PIEZASDEREPUESTO" store:Type="Tables" />
+          <EntitySet Name="FRENOS" EntityType="Self.FRENOS" Schema="PIEZASDEREPUESTO" store:Type="Tables" />
+          <EntitySet Name="LUCES" EntityType="Self.LUCES" Schema="PIEZASDEREPUESTO" store:Type="Tables" />
+          <EntitySet Name="RADIADORES" EntityType="Self.RADIADORES" Schema="PIEZASDEREPUESTO" store:Type="Tables" />
+          <EntitySet Name="SUSPENCION" EntityType="Self.SUSPENCION" Schema="PIEZASDEREPUESTO" store:Type="Tables" />
+          <AssociationSet Name="marca_FK" Association="Self.marca_FK">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="SUSPENCION" EntitySet="SUSPENCION" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK1" Association="Self.marca_FK1">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="REMOLQUE" EntitySet="REMOLQUE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK11" Association="Self.marca_FK11">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="PERILLASCAMBIO" EntitySet="PERILLASCAMBIO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK12" Association="Self.marca_FK12">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="TERMOSTATO" EntitySet="TERMOSTATO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK13" Association="Self.marca_FK13">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ALTERNADORES" EntitySet="ALTERNADORES" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK2" Association="Self.marca_FK2">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="CUBIERTAS" EntitySet="CUBIERTAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK21" Association="Self.marca_FK21">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="PEDALES" EntitySet="PEDALES" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK22" Association="Self.marca_FK22">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FILTRODEAIRE" EntitySet="FILTRODEAIRE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK23" Association="Self.marca_FK23">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="DIRECCION" EntitySet="DIRECCION" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK3" Association="Self.marca_FK3">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="BASTIDORESTECHO" EntitySet="BASTIDORESTECHO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK31" Association="Self.marca_FK31">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ENTRETENIMIENTO" EntitySet="ENTRETENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK32" Association="Self.marca_FK32">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FILTROCOMBUSTIBLE" EntitySet="FILTROCOMBUSTIBLE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK33" Association="Self.marca_FK33">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ENCENDIDO" EntitySet="ENCENDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK4" Association="Self.marca_FK4">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ASISTENCIACARRETERA" EntitySet="ASISTENCIACARRETERA" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK41" Association="Self.marca_FK41">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ALFOMBRAS" EntitySet="ALFOMBRAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK42" Association="Self.marca_FK42">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FILTROACEITE" EntitySet="FILTROACEITE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK43" Association="Self.marca_FK43">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FRENOS" EntitySet="FRENOS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK5" Association="Self.marca_FK5">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FAJASYMANGUERAS" EntitySet="FAJASYMANGUERAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK51" Association="Self.marca_FK51">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="LUCES" EntitySet="LUCES" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK6" Association="Self.marca_FK6">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="BUJIAS" EntitySet="BUJIAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK61" Association="Self.marca_FK61">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="RADIADORES" EntitySet="RADIADORES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK" Association="Self.modelo_FK">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="SUSPENCION" EntitySet="SUSPENCION" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK1" Association="Self.modelo_FK1">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="REMOLQUE" EntitySet="REMOLQUE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK11" Association="Self.modelo_FK11">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="PERILLASCAMBIO" EntitySet="PERILLASCAMBIO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK12" Association="Self.modelo_FK12">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="TERMOSTATO" EntitySet="TERMOSTATO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK13" Association="Self.modelo_FK13">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ALTERNADORES" EntitySet="ALTERNADORES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK2" Association="Self.modelo_FK2">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="CUBIERTAS" EntitySet="CUBIERTAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK21" Association="Self.modelo_FK21">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="PEDALES" EntitySet="PEDALES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK22" Association="Self.modelo_FK22">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FILTRODEAIRE" EntitySet="FILTRODEAIRE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK23" Association="Self.modelo_FK23">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="DIRECCION" EntitySet="DIRECCION" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK3" Association="Self.modelo_FK3">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="BASTIDORESTECHO" EntitySet="BASTIDORESTECHO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK31" Association="Self.modelo_FK31">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ENTRETENIMIENTO" EntitySet="ENTRETENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK32" Association="Self.modelo_FK32">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FILTROCOMBUSTIBLE" EntitySet="FILTROCOMBUSTIBLE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK33" Association="Self.modelo_FK33">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ENCENDIDO" EntitySet="ENCENDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK4" Association="Self.modelo_FK4">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ASISTENCIACARRETERA" EntitySet="ASISTENCIACARRETERA" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK41" Association="Self.modelo_FK41">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ALFOMBRAS" EntitySet="ALFOMBRAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK42" Association="Self.modelo_FK42">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FILTROACEITE" EntitySet="FILTROACEITE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK43" Association="Self.modelo_FK43">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FRENOS" EntitySet="FRENOS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK5" Association="Self.modelo_FK5">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FAJASYMANGUERAS" EntitySet="FAJASYMANGUERAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK51" Association="Self.modelo_FK51">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="LUCES" EntitySet="LUCES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK6" Association="Self.modelo_FK6">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="BUJIAS" EntitySet="BUJIAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK61" Association="Self.modelo_FK61">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="RADIADORES" EntitySet="RADIADORES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK" Association="Self.Proveedor_FK">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="SUSPENCION" EntitySet="SUSPENCION" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK1" Association="Self.Proveedor_FK1">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="REMOLQUE" EntitySet="REMOLQUE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK11" Association="Self.Proveedor_FK11">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="PERILLASCAMBIO" EntitySet="PERILLASCAMBIO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK12" Association="Self.Proveedor_FK12">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="TERMOSTATO" EntitySet="TERMOSTATO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK13" Association="Self.Proveedor_FK13">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ALTERNADORES" EntitySet="ALTERNADORES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK2" Association="Self.Proveedor_FK2">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="CUBIERTAS" EntitySet="CUBIERTAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK21" Association="Self.Proveedor_FK21">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="PEDALES" EntitySet="PEDALES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK22" Association="Self.Proveedor_FK22">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FILTRODEAIRE" EntitySet="FILTRODEAIRE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK23" Association="Self.Proveedor_FK23">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="DIRECCION" EntitySet="DIRECCION" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK3" Association="Self.Proveedor_FK3">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="BASTIDORESTECHO" EntitySet="BASTIDORESTECHO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK31" Association="Self.Proveedor_FK31">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ENTRETENIMIENTO" EntitySet="ENTRETENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK32" Association="Self.Proveedor_FK32">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FILTROCOMBUSTIBLE" EntitySet="FILTROCOMBUSTIBLE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK33" Association="Self.Proveedor_FK33">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ENCENDIDO" EntitySet="ENCENDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK4" Association="Self.Proveedor_FK4">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ASISTENCIACARRETERA" EntitySet="ASISTENCIACARRETERA" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK41" Association="Self.Proveedor_FK41">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ALFOMBRAS" EntitySet="ALFOMBRAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK42" Association="Self.Proveedor_FK42">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FILTROACEITE" EntitySet="FILTROACEITE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK43" Association="Self.Proveedor_FK43">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FRENOS" EntitySet="FRENOS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK5" Association="Self.Proveedor_FK5">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FAJASYMANGUERAS" EntitySet="FAJASYMANGUERAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK51" Association="Self.Proveedor_FK51">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="LUCES" EntitySet="LUCES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK6" Association="Self.Proveedor_FK6">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="BUJIAS" EntitySet="BUJIAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK61" Association="Self.Proveedor_FK61">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="RADIADORES" EntitySet="RADIADORES" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyBDatosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ASISTENCIACARRETERA">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK4" FromRole="ASISTENCIACARRETERA" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK4" FromRole="ASISTENCIACARRETERA" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK4" FromRole="ASISTENCIACARRETERA" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="BASTIDORESTECHO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK3" FromRole="BASTIDORESTECHO" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK3" FromRole="BASTIDORESTECHO" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK3" FromRole="BASTIDORESTECHO" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="CUBIERTAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK2" FromRole="CUBIERTAS" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK2" FromRole="CUBIERTAS" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK2" FromRole="CUBIERTAS" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="REMOLQUE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK1" FromRole="REMOLQUE" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK1" FromRole="REMOLQUE" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK1" FromRole="REMOLQUE" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="ALFOMBRAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK41" FromRole="ALFOMBRAS" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK41" FromRole="ALFOMBRAS" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK41" FromRole="ALFOMBRAS" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="ENTRETENIMIENTO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK31" FromRole="ENTRETENIMIENTO" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK31" FromRole="ENTRETENIMIENTO" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK31" FromRole="ENTRETENIMIENTO" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="PEDALES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK21" FromRole="PEDALES" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK21" FromRole="PEDALES" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK21" FromRole="PEDALES" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="PERILLASCAMBIO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK11" FromRole="PERILLASCAMBIO" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK11" FromRole="PERILLASCAMBIO" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK11" FromRole="PERILLASCAMBIO" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="Marca">
+          <Key>
+            <PropertyRef Name="id_marca" />
+          </Key>
+          <Property Name="id_marca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MARCA1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ASISTENCIACARRETERA" Relationship="Self.marca_FK4" FromRole="Marca" ToRole="ASISTENCIACARRETERA" />
+          <NavigationProperty Name="BASTIDORESTECHO" Relationship="Self.marca_FK3" FromRole="Marca" ToRole="BASTIDORESTECHO" />
+          <NavigationProperty Name="CUBIERTAS" Relationship="Self.marca_FK2" FromRole="Marca" ToRole="CUBIERTAS" />
+          <NavigationProperty Name="REMOLQUE" Relationship="Self.marca_FK1" FromRole="Marca" ToRole="REMOLQUE" />
+          <NavigationProperty Name="ALFOMBRAS" Relationship="Self.marca_FK41" FromRole="Marca" ToRole="ALFOMBRAS" />
+          <NavigationProperty Name="ENTRETENIMIENTO" Relationship="Self.marca_FK31" FromRole="Marca" ToRole="ENTRETENIMIENTO" />
+          <NavigationProperty Name="PEDALES" Relationship="Self.marca_FK21" FromRole="Marca" ToRole="PEDALES" />
+          <NavigationProperty Name="PERILLASCAMBIO" Relationship="Self.marca_FK11" FromRole="Marca" ToRole="PERILLASCAMBIO" />
+          <NavigationProperty Name="SUSPENCION" Relationship="Self.marca_FK" FromRole="Marca" ToRole="SUSPENCION" />
+          <NavigationProperty Name="TERMOSTATO" Relationship="Self.marca_FK12" FromRole="Marca" ToRole="TERMOSTATO" />
+          <NavigationProperty Name="ALTERNADORES" Relationship="Self.marca_FK13" FromRole="Marca" ToRole="ALTERNADORES" />
+          <NavigationProperty Name="FILTRODEAIRE" Relationship="Self.marca_FK22" FromRole="Marca" ToRole="FILTRODEAIRE" />
+          <NavigationProperty Name="DIRECCION" Relationship="Self.marca_FK23" FromRole="Marca" ToRole="DIRECCION" />
+          <NavigationProperty Name="FILTROCOMBUSTIBLE" Relationship="Self.marca_FK32" FromRole="Marca" ToRole="FILTROCOMBUSTIBLE" />
+          <NavigationProperty Name="ENCENDIDO" Relationship="Self.marca_FK33" FromRole="Marca" ToRole="ENCENDIDO" />
+          <NavigationProperty Name="FILTROACEITE" Relationship="Self.marca_FK42" FromRole="Marca" ToRole="FILTROACEITE" />
+          <NavigationProperty Name="FRENOS" Relationship="Self.marca_FK43" FromRole="Marca" ToRole="FRENOS" />
+          <NavigationProperty Name="FAJASYMANGUERAS" Relationship="Self.marca_FK5" FromRole="Marca" ToRole="FAJASYMANGUERAS" />
+          <NavigationProperty Name="LUCES" Relationship="Self.marca_FK51" FromRole="Marca" ToRole="LUCES" />
+          <NavigationProperty Name="BUJIAS" Relationship="Self.marca_FK6" FromRole="Marca" ToRole="BUJIAS" />
+          <NavigationProperty Name="RADIADORES" Relationship="Self.marca_FK61" FromRole="Marca" ToRole="RADIADORES" />
+        </EntityType>
+        <EntityType Name="Modelo">
+          <Key>
+            <PropertyRef Name="id_modelo" />
+          </Key>
+          <Property Name="id_modelo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MODELO1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ASISTENCIACARRETERA" Relationship="Self.modelo_FK4" FromRole="Modelo" ToRole="ASISTENCIACARRETERA" />
+          <NavigationProperty Name="BASTIDORESTECHO" Relationship="Self.modelo_FK3" FromRole="Modelo" ToRole="BASTIDORESTECHO" />
+          <NavigationProperty Name="CUBIERTAS" Relationship="Self.modelo_FK2" FromRole="Modelo" ToRole="CUBIERTAS" />
+          <NavigationProperty Name="REMOLQUE" Relationship="Self.modelo_FK1" FromRole="Modelo" ToRole="REMOLQUE" />
+          <NavigationProperty Name="ALFOMBRAS" Relationship="Self.modelo_FK41" FromRole="Modelo" ToRole="ALFOMBRAS" />
+          <NavigationProperty Name="ENTRETENIMIENTO" Relationship="Self.modelo_FK31" FromRole="Modelo" ToRole="ENTRETENIMIENTO" />
+          <NavigationProperty Name="PEDALES" Relationship="Self.modelo_FK21" FromRole="Modelo" ToRole="PEDALES" />
+          <NavigationProperty Name="PERILLASCAMBIO" Relationship="Self.modelo_FK11" FromRole="Modelo" ToRole="PERILLASCAMBIO" />
+          <NavigationProperty Name="SUSPENCION" Relationship="Self.modelo_FK" FromRole="Modelo" ToRole="SUSPENCION" />
+          <NavigationProperty Name="TERMOSTATO" Relationship="Self.modelo_FK12" FromRole="Modelo" ToRole="TERMOSTATO" />
+          <NavigationProperty Name="ALTERNADORES" Relationship="Self.modelo_FK13" FromRole="Modelo" ToRole="ALTERNADORES" />
+          <NavigationProperty Name="FILTRODEAIRE" Relationship="Self.modelo_FK22" FromRole="Modelo" ToRole="FILTRODEAIRE" />
+          <NavigationProperty Name="DIRECCION" Relationship="Self.modelo_FK23" FromRole="Modelo" ToRole="DIRECCION" />
+          <NavigationProperty Name="FILTROCOMBUSTIBLE" Relationship="Self.modelo_FK32" FromRole="Modelo" ToRole="FILTROCOMBUSTIBLE" />
+          <NavigationProperty Name="ENCENDIDO" Relationship="Self.modelo_FK33" FromRole="Modelo" ToRole="ENCENDIDO" />
+          <NavigationProperty Name="FILTROACEITE" Relationship="Self.modelo_FK42" FromRole="Modelo" ToRole="FILTROACEITE" />
+          <NavigationProperty Name="FRENOS" Relationship="Self.modelo_FK43" FromRole="Modelo" ToRole="FRENOS" />
+          <NavigationProperty Name="FAJASYMANGUERAS" Relationship="Self.modelo_FK5" FromRole="Modelo" ToRole="FAJASYMANGUERAS" />
+          <NavigationProperty Name="LUCES" Relationship="Self.modelo_FK51" FromRole="Modelo" ToRole="LUCES" />
+          <NavigationProperty Name="BUJIAS" Relationship="Self.modelo_FK6" FromRole="Modelo" ToRole="BUJIAS" />
+          <NavigationProperty Name="RADIADORES" Relationship="Self.modelo_FK61" FromRole="Modelo" ToRole="RADIADORES" />
+        </EntityType>
+        <EntityType Name="Proveedor">
+          <Key>
+            <PropertyRef Name="id_proveedor" />
+          </Key>
+          <Property Name="id_proveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TELEFONO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DIRECCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="35" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ASISTENCIACARRETERA" Relationship="Self.Proveedor_FK4" FromRole="Proveedor" ToRole="ASISTENCIACARRETERA" />
+          <NavigationProperty Name="BASTIDORESTECHO" Relationship="Self.Proveedor_FK3" FromRole="Proveedor" ToRole="BASTIDORESTECHO" />
+          <NavigationProperty Name="CUBIERTAS" Relationship="Self.Proveedor_FK2" FromRole="Proveedor" ToRole="CUBIERTAS" />
+          <NavigationProperty Name="REMOLQUE" Relationship="Self.Proveedor_FK1" FromRole="Proveedor" ToRole="REMOLQUE" />
+          <NavigationProperty Name="ALFOMBRAS" Relationship="Self.Proveedor_FK41" FromRole="Proveedor" ToRole="ALFOMBRAS" />
+          <NavigationProperty Name="ENTRETENIMIENTO" Relationship="Self.Proveedor_FK31" FromRole="Proveedor" ToRole="ENTRETENIMIENTO" />
+          <NavigationProperty Name="PEDALES" Relationship="Self.Proveedor_FK21" FromRole="Proveedor" ToRole="PEDALES" />
+          <NavigationProperty Name="PERILLASCAMBIO" Relationship="Self.Proveedor_FK11" FromRole="Proveedor" ToRole="PERILLASCAMBIO" />
+          <NavigationProperty Name="SUSPENCION" Relationship="Self.Proveedor_FK" FromRole="Proveedor" ToRole="SUSPENCION" />
+          <NavigationProperty Name="TERMOSTATO" Relationship="Self.Proveedor_FK12" FromRole="Proveedor" ToRole="TERMOSTATO" />
+          <NavigationProperty Name="ALTERNADORES" Relationship="Self.Proveedor_FK13" FromRole="Proveedor" ToRole="ALTERNADORES" />
+          <NavigationProperty Name="FILTRODEAIRE" Relationship="Self.Proveedor_FK22" FromRole="Proveedor" ToRole="FILTRODEAIRE" />
+          <NavigationProperty Name="DIRECCION1" Relationship="Self.Proveedor_FK23" FromRole="Proveedor" ToRole="DIRECCION" />
+          <NavigationProperty Name="FILTROCOMBUSTIBLE" Relationship="Self.Proveedor_FK32" FromRole="Proveedor" ToRole="FILTROCOMBUSTIBLE" />
+          <NavigationProperty Name="ENCENDIDO" Relationship="Self.Proveedor_FK33" FromRole="Proveedor" ToRole="ENCENDIDO" />
+          <NavigationProperty Name="FILTROACEITE" Relationship="Self.Proveedor_FK42" FromRole="Proveedor" ToRole="FILTROACEITE" />
+          <NavigationProperty Name="FRENOS" Relationship="Self.Proveedor_FK43" FromRole="Proveedor" ToRole="FRENOS" />
+          <NavigationProperty Name="FAJASYMANGUERAS" Relationship="Self.Proveedor_FK5" FromRole="Proveedor" ToRole="FAJASYMANGUERAS" />
+          <NavigationProperty Name="LUCES" Relationship="Self.Proveedor_FK51" FromRole="Proveedor" ToRole="LUCES" />
+          <NavigationProperty Name="BUJIAS" Relationship="Self.Proveedor_FK6" FromRole="Proveedor" ToRole="BUJIAS" />
+          <NavigationProperty Name="RADIADORES" Relationship="Self.Proveedor_FK61" FromRole="Proveedor" ToRole="RADIADORES" />
+        </EntityType>
+        <EntityType Name="BUJIAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK6" FromRole="BUJIAS" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK6" FromRole="BUJIAS" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK6" FromRole="BUJIAS" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="FAJASYMANGUERAS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK5" FromRole="FAJASYMANGUERAS" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK5" FromRole="FAJASYMANGUERAS" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK5" FromRole="FAJASYMANGUERAS" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="FILTROACEITE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK42" FromRole="FILTROACEITE" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK42" FromRole="FILTROACEITE" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK42" FromRole="FILTROACEITE" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="FILTROCOMBUSTIBLE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK32" FromRole="FILTROCOMBUSTIBLE" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK32" FromRole="FILTROCOMBUSTIBLE" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK32" FromRole="FILTROCOMBUSTIBLE" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="FILTRODEAIRE">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK22" FromRole="FILTRODEAIRE" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK22" FromRole="FILTRODEAIRE" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK22" FromRole="FILTRODEAIRE" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="TERMOSTATO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK12" FromRole="TERMOSTATO" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK12" FromRole="TERMOSTATO" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK12" FromRole="TERMOSTATO" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="ALTERNADORES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK13" FromRole="ALTERNADORES" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK13" FromRole="ALTERNADORES" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK13" FromRole="ALTERNADORES" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="DIRECCION">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK23" FromRole="DIRECCION" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK23" FromRole="DIRECCION" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK23" FromRole="DIRECCION" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="ENCENDIDO">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK33" FromRole="ENCENDIDO" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK33" FromRole="ENCENDIDO" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK33" FromRole="ENCENDIDO" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="FRENOS">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK43" FromRole="FRENOS" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK43" FromRole="FRENOS" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK43" FromRole="FRENOS" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="LUCES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK51" FromRole="LUCES" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK51" FromRole="LUCES" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK51" FromRole="LUCES" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="RADIADORES">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK61" FromRole="RADIADORES" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK61" FromRole="RADIADORES" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK61" FromRole="RADIADORES" ToRole="Proveedor" />
+        </EntityType>
+        <EntityType Name="SUSPENCION">
+          <Key>
+            <PropertyRef Name="PRODUCTO" />
+          </Key>
+          <Property Name="PRODUCTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MARCA" Type="Int32" Nullable="false" />
+          <Property Name="MODELO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EXISTENCIA" Type="Int32" />
+          <Property Name="PROVEEDOR" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO" Type="String" MaxLength="34" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Marca1" Relationship="Self.marca_FK" FromRole="SUSPENCION" ToRole="Marca" />
+          <NavigationProperty Name="Modelo1" Relationship="Self.modelo_FK" FromRole="SUSPENCION" ToRole="Modelo" />
+          <NavigationProperty Name="Proveedor1" Relationship="Self.Proveedor_FK" FromRole="SUSPENCION" ToRole="Proveedor" />
+        </EntityType>
+        <Association Name="marca_FK4">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ASISTENCIACARRETERA" Type="Self.ASISTENCIACARRETERA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ASISTENCIACARRETERA">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK4">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ASISTENCIACARRETERA" Type="Self.ASISTENCIACARRETERA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ASISTENCIACARRETERA">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK4">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ASISTENCIACARRETERA" Type="Self.ASISTENCIACARRETERA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ASISTENCIACARRETERA">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK3">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="BASTIDORESTECHO" Type="Self.BASTIDORESTECHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="BASTIDORESTECHO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK3">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="BASTIDORESTECHO" Type="Self.BASTIDORESTECHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="BASTIDORESTECHO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK3">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="BASTIDORESTECHO" Type="Self.BASTIDORESTECHO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="BASTIDORESTECHO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK2">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="CUBIERTAS" Type="Self.CUBIERTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="CUBIERTAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK2">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="CUBIERTAS" Type="Self.CUBIERTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="CUBIERTAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK2">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="CUBIERTAS" Type="Self.CUBIERTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="CUBIERTAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK1">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="REMOLQUE" Type="Self.REMOLQUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="REMOLQUE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK1">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="REMOLQUE" Type="Self.REMOLQUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="REMOLQUE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK1">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="REMOLQUE" Type="Self.REMOLQUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="REMOLQUE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK41">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ALFOMBRAS" Type="Self.ALFOMBRAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ALFOMBRAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK41">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ALFOMBRAS" Type="Self.ALFOMBRAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ALFOMBRAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK41">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ALFOMBRAS" Type="Self.ALFOMBRAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ALFOMBRAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK31">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ENTRETENIMIENTO" Type="Self.ENTRETENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ENTRETENIMIENTO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK31">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ENTRETENIMIENTO" Type="Self.ENTRETENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ENTRETENIMIENTO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK31">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ENTRETENIMIENTO" Type="Self.ENTRETENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ENTRETENIMIENTO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK21">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="PEDALES" Type="Self.PEDALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="PEDALES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK21">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="PEDALES" Type="Self.PEDALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="PEDALES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK21">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="PEDALES" Type="Self.PEDALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="PEDALES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK11">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="PERILLASCAMBIO" Type="Self.PERILLASCAMBIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="PERILLASCAMBIO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK11">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="PERILLASCAMBIO" Type="Self.PERILLASCAMBIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="PERILLASCAMBIO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK11">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="PERILLASCAMBIO" Type="Self.PERILLASCAMBIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="PERILLASCAMBIO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="SUSPENCION" Type="Self.SUSPENCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="SUSPENCION">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK12">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="TERMOSTATO" Type="Self.TERMOSTATO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="TERMOSTATO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK13">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ALTERNADORES" Type="Self.ALTERNADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ALTERNADORES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK22">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FILTRODEAIRE" Type="Self.FILTRODEAIRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FILTRODEAIRE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK23">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="DIRECCION" Type="Self.DIRECCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="DIRECCION">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK32">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FILTROCOMBUSTIBLE" Type="Self.FILTROCOMBUSTIBLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FILTROCOMBUSTIBLE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK33">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="ENCENDIDO" Type="Self.ENCENDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="ENCENDIDO">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK42">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FILTROACEITE" Type="Self.FILTROACEITE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FILTROACEITE">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK43">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FRENOS" Type="Self.FRENOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FRENOS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK5">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="FAJASYMANGUERAS" Type="Self.FAJASYMANGUERAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="FAJASYMANGUERAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK51">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="LUCES" Type="Self.LUCES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="LUCES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK6">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="BUJIAS" Type="Self.BUJIAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="BUJIAS">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="marca_FK61">
+          <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+          <End Role="RADIADORES" Type="Self.RADIADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marca">
+              <PropertyRef Name="id_marca" />
+            </Principal>
+            <Dependent Role="RADIADORES">
+              <PropertyRef Name="MARCA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="SUSPENCION" Type="Self.SUSPENCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="SUSPENCION">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK12">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="TERMOSTATO" Type="Self.TERMOSTATO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="TERMOSTATO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK13">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ALTERNADORES" Type="Self.ALTERNADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ALTERNADORES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK22">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FILTRODEAIRE" Type="Self.FILTRODEAIRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FILTRODEAIRE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK23">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="DIRECCION" Type="Self.DIRECCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="DIRECCION">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK32">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FILTROCOMBUSTIBLE" Type="Self.FILTROCOMBUSTIBLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FILTROCOMBUSTIBLE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK33">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="ENCENDIDO" Type="Self.ENCENDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="ENCENDIDO">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK42">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FILTROACEITE" Type="Self.FILTROACEITE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FILTROACEITE">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK43">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FRENOS" Type="Self.FRENOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FRENOS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK5">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="FAJASYMANGUERAS" Type="Self.FAJASYMANGUERAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="FAJASYMANGUERAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK51">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="LUCES" Type="Self.LUCES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="LUCES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK6">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="BUJIAS" Type="Self.BUJIAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="BUJIAS">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="modelo_FK61">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+          <End Role="RADIADORES" Type="Self.RADIADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="id_modelo" />
+            </Principal>
+            <Dependent Role="RADIADORES">
+              <PropertyRef Name="MODELO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="SUSPENCION" Type="Self.SUSPENCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="SUSPENCION">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK12">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="TERMOSTATO" Type="Self.TERMOSTATO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="TERMOSTATO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK13">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ALTERNADORES" Type="Self.ALTERNADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ALTERNADORES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK22">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FILTRODEAIRE" Type="Self.FILTRODEAIRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FILTRODEAIRE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK23">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="DIRECCION" Type="Self.DIRECCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="DIRECCION">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK32">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FILTROCOMBUSTIBLE" Type="Self.FILTROCOMBUSTIBLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FILTROCOMBUSTIBLE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK33">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="ENCENDIDO" Type="Self.ENCENDIDO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="ENCENDIDO">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK42">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FILTROACEITE" Type="Self.FILTROACEITE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FILTROACEITE">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK43">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FRENOS" Type="Self.FRENOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FRENOS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK5">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="FAJASYMANGUERAS" Type="Self.FAJASYMANGUERAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="FAJASYMANGUERAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK51">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="LUCES" Type="Self.LUCES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="LUCES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK6">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="BUJIAS" Type="Self.BUJIAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="BUJIAS">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Proveedor_FK61">
+          <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+          <End Role="RADIADORES" Type="Self.RADIADORES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="id_proveedor" />
+            </Principal>
+            <Dependent Role="RADIADORES">
+              <PropertyRef Name="PROVEEDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MyBDatosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ASISTENCIACARRETERA" EntityType="Self.ASISTENCIACARRETERA" />
+          <EntitySet Name="BASTIDORESTECHO" EntityType="Self.BASTIDORESTECHO" />
+          <EntitySet Name="CUBIERTAS" EntityType="Self.CUBIERTAS" />
+          <EntitySet Name="REMOLQUE" EntityType="Self.REMOLQUE" />
+          <EntitySet Name="ALFOMBRAS" EntityType="Self.ALFOMBRAS" />
+          <EntitySet Name="ENTRETENIMIENTO" EntityType="Self.ENTRETENIMIENTO" />
+          <EntitySet Name="PEDALES" EntityType="Self.PEDALES" />
+          <EntitySet Name="PERILLASCAMBIO" EntityType="Self.PERILLASCAMBIO" />
+          <EntitySet Name="Marca" EntityType="Self.Marca" />
+          <EntitySet Name="Modelo" EntityType="Self.Modelo" />
+          <EntitySet Name="Proveedor" EntityType="Self.Proveedor" />
+          <EntitySet Name="BUJIAS" EntityType="Self.BUJIAS" />
+          <EntitySet Name="FAJASYMANGUERAS" EntityType="Self.FAJASYMANGUERAS" />
+          <EntitySet Name="FILTROACEITE" EntityType="Self.FILTROACEITE" />
+          <EntitySet Name="FILTROCOMBUSTIBLE" EntityType="Self.FILTROCOMBUSTIBLE" />
+          <EntitySet Name="FILTRODEAIRE" EntityType="Self.FILTRODEAIRE" />
+          <EntitySet Name="TERMOSTATO" EntityType="Self.TERMOSTATO" />
+          <EntitySet Name="ALTERNADORES" EntityType="Self.ALTERNADORES" />
+          <EntitySet Name="DIRECCION" EntityType="Self.DIRECCION" />
+          <EntitySet Name="ENCENDIDO" EntityType="Self.ENCENDIDO" />
+          <EntitySet Name="FRENOS" EntityType="Self.FRENOS" />
+          <EntitySet Name="LUCES" EntityType="Self.LUCES" />
+          <EntitySet Name="RADIADORES" EntityType="Self.RADIADORES" />
+          <EntitySet Name="SUSPENCION" EntityType="Self.SUSPENCION" />
+          <AssociationSet Name="marca_FK4" Association="Self.marca_FK4">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ASISTENCIACARRETERA" EntitySet="ASISTENCIACARRETERA" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK4" Association="Self.modelo_FK4">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ASISTENCIACARRETERA" EntitySet="ASISTENCIACARRETERA" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK4" Association="Self.Proveedor_FK4">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ASISTENCIACARRETERA" EntitySet="ASISTENCIACARRETERA" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK3" Association="Self.marca_FK3">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="BASTIDORESTECHO" EntitySet="BASTIDORESTECHO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK3" Association="Self.modelo_FK3">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="BASTIDORESTECHO" EntitySet="BASTIDORESTECHO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK3" Association="Self.Proveedor_FK3">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="BASTIDORESTECHO" EntitySet="BASTIDORESTECHO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK2" Association="Self.marca_FK2">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="CUBIERTAS" EntitySet="CUBIERTAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK2" Association="Self.modelo_FK2">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="CUBIERTAS" EntitySet="CUBIERTAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK2" Association="Self.Proveedor_FK2">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="CUBIERTAS" EntitySet="CUBIERTAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK1" Association="Self.marca_FK1">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="REMOLQUE" EntitySet="REMOLQUE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK1" Association="Self.modelo_FK1">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="REMOLQUE" EntitySet="REMOLQUE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK1" Association="Self.Proveedor_FK1">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="REMOLQUE" EntitySet="REMOLQUE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK41" Association="Self.marca_FK41">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ALFOMBRAS" EntitySet="ALFOMBRAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK41" Association="Self.modelo_FK41">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ALFOMBRAS" EntitySet="ALFOMBRAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK41" Association="Self.Proveedor_FK41">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ALFOMBRAS" EntitySet="ALFOMBRAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK31" Association="Self.marca_FK31">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ENTRETENIMIENTO" EntitySet="ENTRETENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK31" Association="Self.modelo_FK31">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ENTRETENIMIENTO" EntitySet="ENTRETENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK31" Association="Self.Proveedor_FK31">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ENTRETENIMIENTO" EntitySet="ENTRETENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK21" Association="Self.marca_FK21">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="PEDALES" EntitySet="PEDALES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK21" Association="Self.modelo_FK21">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="PEDALES" EntitySet="PEDALES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK21" Association="Self.Proveedor_FK21">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="PEDALES" EntitySet="PEDALES" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK11" Association="Self.marca_FK11">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="PERILLASCAMBIO" EntitySet="PERILLASCAMBIO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK11" Association="Self.modelo_FK11">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="PERILLASCAMBIO" EntitySet="PERILLASCAMBIO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK11" Association="Self.Proveedor_FK11">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="PERILLASCAMBIO" EntitySet="PERILLASCAMBIO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK" Association="Self.marca_FK">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="SUSPENCION" EntitySet="SUSPENCION" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK12" Association="Self.marca_FK12">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="TERMOSTATO" EntitySet="TERMOSTATO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK13" Association="Self.marca_FK13">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ALTERNADORES" EntitySet="ALTERNADORES" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK22" Association="Self.marca_FK22">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FILTRODEAIRE" EntitySet="FILTRODEAIRE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK23" Association="Self.marca_FK23">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="DIRECCION" EntitySet="DIRECCION" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK32" Association="Self.marca_FK32">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FILTROCOMBUSTIBLE" EntitySet="FILTROCOMBUSTIBLE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK33" Association="Self.marca_FK33">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="ENCENDIDO" EntitySet="ENCENDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK42" Association="Self.marca_FK42">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FILTROACEITE" EntitySet="FILTROACEITE" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK43" Association="Self.marca_FK43">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FRENOS" EntitySet="FRENOS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK5" Association="Self.marca_FK5">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="FAJASYMANGUERAS" EntitySet="FAJASYMANGUERAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK51" Association="Self.marca_FK51">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="LUCES" EntitySet="LUCES" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK6" Association="Self.marca_FK6">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="BUJIAS" EntitySet="BUJIAS" />
+          </AssociationSet>
+          <AssociationSet Name="marca_FK61" Association="Self.marca_FK61">
+            <End Role="Marca" EntitySet="Marca" />
+            <End Role="RADIADORES" EntitySet="RADIADORES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK" Association="Self.modelo_FK">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="SUSPENCION" EntitySet="SUSPENCION" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK12" Association="Self.modelo_FK12">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="TERMOSTATO" EntitySet="TERMOSTATO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK13" Association="Self.modelo_FK13">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ALTERNADORES" EntitySet="ALTERNADORES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK22" Association="Self.modelo_FK22">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FILTRODEAIRE" EntitySet="FILTRODEAIRE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK23" Association="Self.modelo_FK23">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="DIRECCION" EntitySet="DIRECCION" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK32" Association="Self.modelo_FK32">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FILTROCOMBUSTIBLE" EntitySet="FILTROCOMBUSTIBLE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK33" Association="Self.modelo_FK33">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ENCENDIDO" EntitySet="ENCENDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK42" Association="Self.modelo_FK42">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FILTROACEITE" EntitySet="FILTROACEITE" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK43" Association="Self.modelo_FK43">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FRENOS" EntitySet="FRENOS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK5" Association="Self.modelo_FK5">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="FAJASYMANGUERAS" EntitySet="FAJASYMANGUERAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK51" Association="Self.modelo_FK51">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="LUCES" EntitySet="LUCES" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK6" Association="Self.modelo_FK6">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="BUJIAS" EntitySet="BUJIAS" />
+          </AssociationSet>
+          <AssociationSet Name="modelo_FK61" Association="Self.modelo_FK61">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="RADIADORES" EntitySet="RADIADORES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK" Association="Self.Proveedor_FK">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="SUSPENCION" EntitySet="SUSPENCION" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK12" Association="Self.Proveedor_FK12">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="TERMOSTATO" EntitySet="TERMOSTATO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK13" Association="Self.Proveedor_FK13">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ALTERNADORES" EntitySet="ALTERNADORES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK22" Association="Self.Proveedor_FK22">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FILTRODEAIRE" EntitySet="FILTRODEAIRE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK23" Association="Self.Proveedor_FK23">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="DIRECCION" EntitySet="DIRECCION" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK32" Association="Self.Proveedor_FK32">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FILTROCOMBUSTIBLE" EntitySet="FILTROCOMBUSTIBLE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK33" Association="Self.Proveedor_FK33">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="ENCENDIDO" EntitySet="ENCENDIDO" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK42" Association="Self.Proveedor_FK42">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FILTROACEITE" EntitySet="FILTROACEITE" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK43" Association="Self.Proveedor_FK43">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FRENOS" EntitySet="FRENOS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK5" Association="Self.Proveedor_FK5">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="FAJASYMANGUERAS" EntitySet="FAJASYMANGUERAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK51" Association="Self.Proveedor_FK51">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="LUCES" EntitySet="LUCES" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK6" Association="Self.Proveedor_FK6">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="BUJIAS" EntitySet="BUJIAS" />
+          </AssociationSet>
+          <AssociationSet Name="Proveedor_FK61" Association="Self.Proveedor_FK61">
+            <End Role="Proveedor" EntitySet="Proveedor" />
+            <End Role="RADIADORES" EntitySet="RADIADORES" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MyBDatosModelStoreContainer" CdmEntityContainer="MyBDatosEntities">
+          <EntitySetMapping Name="ASISTENCIACARRETERA">
+            <EntityTypeMapping TypeName="MyBDatosModel.ASISTENCIACARRETERA">
+              <MappingFragment StoreEntitySet="ASISTENCIACARRETERA">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BASTIDORESTECHO">
+            <EntityTypeMapping TypeName="MyBDatosModel.BASTIDORESTECHO">
+              <MappingFragment StoreEntitySet="BASTIDORESTECHO">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CUBIERTAS">
+            <EntityTypeMapping TypeName="MyBDatosModel.CUBIERTAS">
+              <MappingFragment StoreEntitySet="CUBIERTAS">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REMOLQUE">
+            <EntityTypeMapping TypeName="MyBDatosModel.REMOLQUE">
+              <MappingFragment StoreEntitySet="REMOLQUE">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALFOMBRAS">
+            <EntityTypeMapping TypeName="MyBDatosModel.ALFOMBRAS">
+              <MappingFragment StoreEntitySet="ALFOMBRAS">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ENTRETENIMIENTO">
+            <EntityTypeMapping TypeName="MyBDatosModel.ENTRETENIMIENTO">
+              <MappingFragment StoreEntitySet="ENTRETENIMIENTO">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PEDALES">
+            <EntityTypeMapping TypeName="MyBDatosModel.PEDALES">
+              <MappingFragment StoreEntitySet="PEDALES">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PERILLASCAMBIO">
+            <EntityTypeMapping TypeName="MyBDatosModel.PERILLASCAMBIO">
+              <MappingFragment StoreEntitySet="PERILLASCAMBIO">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Marca">
+            <EntityTypeMapping TypeName="MyBDatosModel.Marca">
+              <MappingFragment StoreEntitySet="Marca">
+                <ScalarProperty Name="id_marca" ColumnName="id_marca" />
+                <ScalarProperty Name="MARCA1" ColumnName="MARCA" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Modelo">
+            <EntityTypeMapping TypeName="MyBDatosModel.Modelo">
+              <MappingFragment StoreEntitySet="Modelo">
+                <ScalarProperty Name="id_modelo" ColumnName="id_modelo" />
+                <ScalarProperty Name="MODELO1" ColumnName="MODELO" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Proveedor">
+            <EntityTypeMapping TypeName="MyBDatosModel.Proveedor">
+              <MappingFragment StoreEntitySet="Proveedor">
+                <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BUJIAS">
+            <EntityTypeMapping TypeName="MyBDatosModel.BUJIAS">
+              <MappingFragment StoreEntitySet="BUJIAS">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FAJASYMANGUERAS">
+            <EntityTypeMapping TypeName="MyBDatosModel.FAJASYMANGUERAS">
+              <MappingFragment StoreEntitySet="FAJASYMANGUERAS">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FILTROACEITE">
+            <EntityTypeMapping TypeName="MyBDatosModel.FILTROACEITE">
+              <MappingFragment StoreEntitySet="FILTROACEITE">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FILTROCOMBUSTIBLE">
+            <EntityTypeMapping TypeName="MyBDatosModel.FILTROCOMBUSTIBLE">
+              <MappingFragment StoreEntitySet="FILTROCOMBUSTIBLE">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FILTRODEAIRE">
+            <EntityTypeMapping TypeName="MyBDatosModel.FILTRODEAIRE">
+              <MappingFragment StoreEntitySet="FILTRODEAIRE">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TERMOSTATO">
+            <EntityTypeMapping TypeName="MyBDatosModel.TERMOSTATO">
+              <MappingFragment StoreEntitySet="TERMOSTATO">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALTERNADORES">
+            <EntityTypeMapping TypeName="MyBDatosModel.ALTERNADORES">
+              <MappingFragment StoreEntitySet="ALTERNADORES">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DIRECCION">
+            <EntityTypeMapping TypeName="MyBDatosModel.DIRECCION">
+              <MappingFragment StoreEntitySet="DIRECCION">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ENCENDIDO">
+            <EntityTypeMapping TypeName="MyBDatosModel.ENCENDIDO">
+              <MappingFragment StoreEntitySet="ENCENDIDO">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FRENOS">
+            <EntityTypeMapping TypeName="MyBDatosModel.FRENOS">
+              <MappingFragment StoreEntitySet="FRENOS">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LUCES">
+            <EntityTypeMapping TypeName="MyBDatosModel.LUCES">
+              <MappingFragment StoreEntitySet="LUCES">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RADIADORES">
+            <EntityTypeMapping TypeName="MyBDatosModel.RADIADORES">
+              <MappingFragment StoreEntitySet="RADIADORES">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SUSPENCION">
+            <EntityTypeMapping TypeName="MyBDatosModel.SUSPENCION">
+              <MappingFragment StoreEntitySet="SUSPENCION">
+                <ScalarProperty Name="PRODUCTO" ColumnName="PRODUCTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="EXISTENCIA" ColumnName="EXISTENCIA" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
