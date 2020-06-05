@@ -128,7 +128,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ALTERNADORESController.cs" />
+    <Compile Include="Controllers\DIRECCIONsController.cs" />
+    <Compile Include="Controllers\ENCENDIDOesController.cs" />
+    <Compile Include="Controllers\FRENOSController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LUCESController.cs" />
+    <Compile Include="Controllers\MarcasController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ModeloesController.cs" />
+    <Compile Include="Controllers\ProveedorsController.cs" />
+    <Compile Include="Controllers\RADIADORESController.cs" />
+    <Compile Include="Controllers\SUSPENCIONsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -226,10 +237,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\myPlantilla.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\navigation.jpg" />
     <Content Include="Models\BDModel1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BDModel1.Context.cs</LastGenOutput>
@@ -274,6 +287,59 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_MiPlantilla.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
+    <Content Include="Views\Menu\Categoria.cshtml" />
+    <Content Include="Views\Marcas\Create.cshtml" />
+    <Content Include="Views\Marcas\Delete.cshtml" />
+    <Content Include="Views\Marcas\Details.cshtml" />
+    <Content Include="Views\Marcas\Edit.cshtml" />
+    <Content Include="Views\Marcas\Index.cshtml" />
+    <Content Include="Views\ALTERNADORES\Create.cshtml" />
+    <Content Include="Views\ALTERNADORES\Delete.cshtml" />
+    <Content Include="Views\ALTERNADORES\Details.cshtml" />
+    <Content Include="Views\ALTERNADORES\Edit.cshtml" />
+    <Content Include="Views\ALTERNADORES\Index.cshtml" />
+    <Content Include="Views\RADIADORES\Create.cshtml" />
+    <Content Include="Views\RADIADORES\Delete.cshtml" />
+    <Content Include="Views\RADIADORES\Details.cshtml" />
+    <Content Include="Views\RADIADORES\Edit.cshtml" />
+    <Content Include="Views\RADIADORES\Index.cshtml" />
+    <Content Include="Views\Modeloes\Create.cshtml" />
+    <Content Include="Views\Modeloes\Delete.cshtml" />
+    <Content Include="Views\Modeloes\Details.cshtml" />
+    <Content Include="Views\Modeloes\Edit.cshtml" />
+    <Content Include="Views\Modeloes\Index.cshtml" />
+    <Content Include="Views\Proveedors\Create.cshtml" />
+    <Content Include="Views\Proveedors\Delete.cshtml" />
+    <Content Include="Views\Proveedors\Details.cshtml" />
+    <Content Include="Views\Proveedors\Edit.cshtml" />
+    <Content Include="Views\Proveedors\Index.cshtml" />
+    <Content Include="Views\LUCES\Create.cshtml" />
+    <Content Include="Views\LUCES\Delete.cshtml" />
+    <Content Include="Views\LUCES\Details.cshtml" />
+    <Content Include="Views\LUCES\Edit.cshtml" />
+    <Content Include="Views\LUCES\Index.cshtml" />
+    <Content Include="Views\FRENOS\Create.cshtml" />
+    <Content Include="Views\FRENOS\Delete.cshtml" />
+    <Content Include="Views\FRENOS\Details.cshtml" />
+    <Content Include="Views\FRENOS\Edit.cshtml" />
+    <Content Include="Views\FRENOS\Index.cshtml" />
+    <Content Include="Views\ENCENDIDOes\Create.cshtml" />
+    <Content Include="Views\ENCENDIDOes\Delete.cshtml" />
+    <Content Include="Views\ENCENDIDOes\Details.cshtml" />
+    <Content Include="Views\ENCENDIDOes\Edit.cshtml" />
+    <Content Include="Views\ENCENDIDOes\Index.cshtml" />
+    <Content Include="Views\DIRECCIONs\Create.cshtml" />
+    <Content Include="Views\DIRECCIONs\Delete.cshtml" />
+    <Content Include="Views\DIRECCIONs\Details.cshtml" />
+    <Content Include="Views\DIRECCIONs\Edit.cshtml" />
+    <Content Include="Views\DIRECCIONs\Index.cshtml" />
+    <Content Include="Views\SUSPENCIONs\Create.cshtml" />
+    <Content Include="Views\SUSPENCIONs\Delete.cshtml" />
+    <Content Include="Views\SUSPENCIONs\Details.cshtml" />
+    <Content Include="Views\SUSPENCIONs\Edit.cshtml" />
+    <Content Include="Views\SUSPENCIONs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
