@@ -14,7 +14,11 @@ namespace MVC2._0.Controllers
             return View();
         }
 
-        public ActionResult Categoria()
+        public ActionResult Repuestos()
+        {
+            return View();
+        }
+        public ActionResult Mantenimiento()
         {
             return View();
         }

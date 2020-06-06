@@ -262,6 +262,7 @@
     <Content Include="Models\BDModel1.edmx.diagram">
       <DependentUpon>BDModel1.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -289,7 +290,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_MiPlantilla.cshtml" />
     <Content Include="Views\Menu\Index.cshtml" />
-    <Content Include="Views\Menu\Categoria.cshtml" />
+    <Content Include="Views\Menu\Repuestos.cshtml" />
     <Content Include="Views\Marcas\Create.cshtml" />
     <Content Include="Views\Marcas\Delete.cshtml" />
     <Content Include="Views\Marcas\Details.cshtml" />
@@ -340,6 +341,7 @@
     <Content Include="Views\SUSPENCIONs\Details.cshtml" />
     <Content Include="Views\SUSPENCIONs\Edit.cshtml" />
     <Content Include="Views\SUSPENCIONs\Index.cshtml" />
+    <Content Include="Views\Menu\Mantenimiento.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
